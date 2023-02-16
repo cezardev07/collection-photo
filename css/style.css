@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+    background: #ddd;
+    transition: all .3s ease;
+}
+header{
+    position: fixed;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 10px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+main{
+    max-width: 1200px;
+    margin: 110px auto;
+    margin-bottom: 10px;
+}
+.sec-center{
+    background: #fff;
+    padding: 10px;
+    animation: op 3s ease;
+}
+.publi{
+    display: grid;
+    grid-template-areas: 
+    "card0 card1 card2"
+    "card3 card4 card2" 
+    "card5 card6 card7"
+    "card8 card9 card10" 
+    "card11 card12 card13"
+    "card11 card14 card15" 
+    "card16 card17 card18"
+    "card19 card20 card21"
+    ;
+    min-height: 2000px;
+    gap: 10px;
+    width: 100%;
+}
+.card{
+    border: solid 2px rgba(0, 0, 0, 0.243);
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s ease;
+    border-radius: 10px;
+}
+.card:hover{
+    transform: translateY(-8px);
+}
+.card1{
+    grid-area: card1; 
+}
+.card2{
+    grid-area: card2; 
+}
+.card3{
+    grid-area: card3; 
+}
+.card4{
+    grid-area: card4;
+}
+.card5{
+    grid-area: card5;
+}
+.card6{
+    grid-area: card6;
+}
+.card7{
+    grid-area: card7;
+}
+.card8{
+    grid-area: card8;
+}
+.card9{
+    grid-area: card9;
+}
+.card10{
+    grid-area: card10;
+}
+.card11{
+    grid-area: card11;
+}
+.card12{
+    grid-area: card12;
+}
+.card13{
+    grid-area: card13;
+}
+.card14{
+    grid-area: card14;
+}
+.card15{
+    grid-area: card15;
+}
+.card16{
+    grid-area: card16;
+}
+.card17{
+    grid-area: card17;
+}
+.card18{
+    grid-area: card18;
+}
+.card19{
+    grid-area: card19;
+}
+.card20{
+    grid-area: card20;
+}
+.card21{
+    grid-area: card21;
+}
+.card22{
+    grid-area: card22;
+}
+.arrow-top{
+    position: fixed;
+    z-index: 1;
+    bottom: 20px;
+    right: 30px;
+    font-size: 60px;
+    rotate: 90deg;
+}
+ion-icon{
+    transition: all .3s ease;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+ion-icon:hover{
+    scale: 1.1;
+    box-shadow: 0px 0px 100px 5px rgba(0, 0, 0, 0.475);
+}
+ion-icon:active{
+    scale: 1;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+h1::selection{
+    background: transparent;
+}
+a{
+    text-decoration: none;
+    color: rgb(57, 119, 167);
+}
+header ion-icon{
+    color: rgb(57, 119, 167);
+}
+.i{
+    color: rgb(36, 137, 231);
+    font-size: 35px;
+}
+.darck-body{
+    background: rgb(16, 44, 70);
+}
+.darck-item{
+    background: rgb(22, 61, 96);
+    color: #fff;
+}
+.cookie{
+    position: fixed;bottom: 0;width: 100%;padding: 20px;background: #ffffff7e; z-index: 1;
+    display: flex;align-items: center;justify-content: space-evenly;gap: 20px;font-size: 20px;
+}
+.cookie button{
+    padding: 10px 25px;font-size: 20px;background: rgb(36, 137, 231);color: #fff;
+    cursor: pointer;border-radius: 10px;border: none;
+}.cookie button:hover{
+    background: rgb(31, 113, 189);
+}
+.cookie p{
+    font-size: 20px; padding: 10px;color: rgb(20, 37, 53);
+}
+@keyframes op {
+    0%{
+        opacity: -1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media (max-width: 600px){
+    .publi{
+        min-height: 200vh;
+    }
+}
